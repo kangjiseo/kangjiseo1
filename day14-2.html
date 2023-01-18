@@ -1,0 +1,57 @@
+<!D<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <title>Document</title>
+    <style>
+        * {margin: 5px;}
+        #m1 > p:last-child { height: 20px;}
+        span {display: inline-block; height: 20px;}
+    </style>
+    <script>
+        // $(document).ready(function(){
+        //     $('#m1 > p:contains("css")').css('border', '4px solid red'); // :contains("문구")
+        //     $('#m1 > p:empty').css('border', '4px solid orange'); // :empty 비어있는
+        //     $('#m2 > span:parent').css('border', '4px solid yellow'); // :parent 부모
+        //     $('#m3 > section:has(article)').css('border', '4px solid green'); // section에서 article을 가지고 있는 것
+        // });
+    </script>
+</head>
+<body>
+    <!-- <div id="m1">
+        <p>html, css, javascript</p>
+        <p>html5와 웹표준</p>
+        <p></p>
+    </div>
+    <div id="m2">
+        <span></span>
+        <span>내용1</span>
+    </div>
+    <div id="m3">
+        <section>
+            <article>내용2_1</article>
+        </section>
+        <section>
+            <div>
+                <span>내용2_2</span>
+            </div>
+        </section>
+    </div> -->
+    <div class="ab">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="demo">
+            <p class="test">
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+    </div>
+    <script>
+        // $('p.test').parent('div.demo').css('color', 'green');
+        // $('p').parent().css('color','blue');
+        $('p').parent().css('border','2px solid red');
+    </script>
+</body>
+</html>
